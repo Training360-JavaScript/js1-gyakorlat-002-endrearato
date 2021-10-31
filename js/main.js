@@ -6,31 +6,39 @@
 */
 const content = ["első", "második", "harmadik", "negyedik"]
 let y;
+const table = document.getElementById("table")
+
+
 
 function generateList() {
-for (y of content) {
-  document.write("<li>" + y + "</li>");
-}}
-
-generateList(content)
-
-
-//const table = document.getElementById("table")
-
+    for (y of content) {
+          document.write("<li>" + y + "</li>");
+        }}
+        
+        generateList(content)
+        
+        
+        // function generateList() {
+        //     for (let i = 0; i < content.length; i++) {
+        //         document.write("<li>" + content[i] + "</li>");
+        //     }}
+        // generateList(content)
+        
 // content.forEach(generateList => {
-//     table.innerHTML = `
-//     <li>${content}</li>    
-//     `
-// })
-
+    //     table.innerHTML = `
+    //     <li>${content}</li>    
+    //     `
+    // })
+            
 // function generateList() {
-//     for (let i = 0; i < content.length; i++) {
-//         return table.innerHTML += `
-//          <li>${content[i]}</li>
-//            `
-// }}
-// generateList(content)
-
+//         for (let i = 0; i < content.length; i++) {
+//             return table.innerHTML += `
+//              <li>${content[i]}</li>
+//                `
+//         }
+//         }
+//         generateList(content)
+                
 // let i;
 // function generateList() {
 // for (i of content) {
