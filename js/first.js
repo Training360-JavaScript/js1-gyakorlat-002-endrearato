@@ -11,7 +11,8 @@ const numArray = [5, 15, 25, 35];
 const brutto = numArray
     .map(item  => item * 1.27)
     .reduce((previousNumber, currentNumber) => previousNumber + currentNumber)
-    .toFixed(0)
+let result = Math.round(brutto)
 
-console.log(brutto)
+console.log(result)
+console.log(typeof(result))
 
