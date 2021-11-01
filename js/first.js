@@ -6,6 +6,12 @@
 __térjen vissza__ az elemek egész számra kerekített összegével!
 */
 const numArray = [5, 15, 25, 35];
-const brutto = (numArray.map(item  => Math.floor(item * 1.27)))
+
+
+const brutto = numArray
+    .map(item  => item * 1.27)
+    .reduce((previousNumber, currentNumber) => previousNumber + currentNumber)
+    .toFixed(0)
 
 console.log(brutto)
+
